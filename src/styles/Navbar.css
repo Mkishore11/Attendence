@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  gap: 30px;
+  padding: 15px;
+  background: #222;
+}
+
+/* Remove underline */
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-item:hover {
+  color: #00bcd4;
+}
+
+/* Active link (clicked page) */
+.nav-item.active {
+  color: #ff9800;
+  border-bottom: 2px solid #ff9800;
+}
