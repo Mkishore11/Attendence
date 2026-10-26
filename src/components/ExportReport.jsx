@@ -6,7 +6,7 @@ import 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
 export default function ExportReport() {
-  const { classes, students, attendance, getClassName, getStudentName, getStartOfWeek, getStartOfMonth } = useAppContext();
+  const { classes, students, attendance, getClassName, getStartOfWeek, getStartOfMonth } = useAppContext();
   const [pdfClass, setPdfClass] = useState('');
   const [pdfPeriod, setPdfPeriod] = useState('today');
   const [excelClass, setExcelClass] = useState('');

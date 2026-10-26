@@ -3,7 +3,7 @@ import { useAppContext, getTodayString } from '../context/AppContext';
 import { RiGroupLine, RiCheckLine, RiCloseLine, RiTimeLine } from 'react-icons/ri';
 
 export default function Dashboard() {
-  const { classes, students, attendance, getClassName, getStudentName, getAttendancePercentage } = useAppContext();
+  const { classes, students, attendance, getClassName, getStudentName } = useAppContext();
   const today = getTodayString();
 
   const todayRecords = attendance.filter(a => a.date === today);
